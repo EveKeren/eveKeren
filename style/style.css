@@ -35,7 +35,7 @@
   flex-direction: row-reverse;
 }
 header {
-  background: url('./images/backgroundBanner.jpg');
+  background: url('../images/backgroundBanner.jpg');
   background-size: cover;
 }
 .sectionBanner {
