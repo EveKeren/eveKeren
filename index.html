@@ -7,21 +7,191 @@
     <title>Index</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/c31be186fd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-
-
-
-
-
-
-
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Eve logo.png" alt="Eve Keren" height="24" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-itemHome">
+                        <a class="nav-link active" href="index.html">בית</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutMe">עליי</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">שירותים</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactUs">צור קשר</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="sectionBanner">
+            <h1>תיק עבודות</h1>
+            <p>מוזמנים להתרשם מתיק העבודות המגוונות שלי<br>גללו מטה כדי לצפות בעבודות. </p>
+        </div>
+        <div class="sectionLogos">
+            <img id="html" src="images/img-HTML.png" alt="HTML">
+            <img id="css" src="images/img-CSS.png" alt="CSS">
+            <img src="images/img-Bootstrap.png" alt="bootstrap">
+            <img src="images/img-SASS.png" alt="SASS">
+        </div>
+    </header>
+    <div dir="rtl" class="aboutMe" id=aboutMe>
+        <div class="projectsText">
+            <h2>קצת עליי</h2>
+            <p>נעים להכיר, אני איב. אמא לשני מתוקים<br>
+                בת 34, מפתחת לומדות אינטרנטיות דרך פלטפורמת wordpress<br>
+                נהנית מאתגרים חדשים</p>
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <div class="projectsText">
+            <h2>עבודות נבחרות</h2>
+            <p>בכל קוביה קיים פרויקט שונה המרכז את יכולותיי </p>
+        </div>
+        <section class="d-flex justify-content-evenly">
+            <div class="card" style="width: 18rem;">
+                <img src="images/project1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">פרויקט 1</h5>
+                    <p class="card-text">ייעוץ חינם במגוון תחומים </p>
+                    <div class="d-grid gap-2">
+                        <button onClick="location.href='project1.html';" class="btn btn-primary" type="button">לצפייה
+                            בפרויקט</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/project2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">פרויקט 2</h5>
+                    <p class="card-text">דף נחיתה לקידום אתרים </p>
+                    <div class="d-grid gap-2">
+                        <button onClick="location.href='project2.html';" class="btn btn-primary" type="button">לצפייה
+                            בפרויקט</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/project3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">פרויקט 3
+                    </h5>
+                    <p class="card-text">קופון לקפה חינם לאחר מילוי פרטים</p>
+                    <div class="d-grid gap-2">
+                        <button onClick="location.href='project3.html';" class="btn btn-primary">לצפייה בפרויקט</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="d-flex justify-content-evenly">
+            <div class="card" style="width: 18rem;">
+                <img src="images/project4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">פרויקט 4</h5>
+                    <p class="card-text">מילוי פרטים לקבלת מתנות</p>
+                    <div class="d-grid gap-2">
+                        <button onClick="location.href='project4.html';" class="btn btn-primary" type="button">לצפייה
+                            בפרויקט</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/project5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">פרויקט 5</h5>
+                    <p class="card-text">חוויה סובבת עולם </p>
+                    <div class="d-grid gap-2">
+                        <button onClick="location.href='project5.html';" class="btn btn-primary" type="button">לצפייה
+                            בפרויקט</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/project6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">פרויקט 6
+                    </h5>
+                    <p class="card-text">לימודים וקידום עבודות חדשות</p>
+                    <div class="d-grid gap-2">
+                        <button onClick="location.href='project6.html';" class="btn btn-primary">לצפייה בפרויקט</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div dir="rtl" class="contactUs" id="contactUs">
+        <h2>צור קשר</h2>
+        <p>מוזמנים לפנות לשאילת שאלות ומידע נוסף </p>
+        <div class="mb-3">
+            <label for="name" class="form-label">שם מלא</label>
+            <input type="text" class="form-control" id="name" placeholder="אלברט אינשטיין">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">אימייל</label>
+            <input type="email" class="form-control" id="email" placeholder="albert@gmail.com">
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">מספר טלפון</label>
+            <input type="tel" class="form-control" id="phone" placeholder="0544770089">
+        </div>
+        <div class="mb-3">
+            <label for="textarea" class="form-label">תוכן ההודעה</label>
+            <textarea class="form-control" id="textarea" rows="3"></textarea>
+        </div>
+        <input type="submit" value="צרו קשר">
+    </div>
+    <div class="links">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/eve.keren" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/evekeren" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="tel:0547455438">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/972547455438?text=שלום%2C+הגעתי+אלייך+דרך+האתר+שלך" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:eve.keren6@gmail.com?subject=יצירת+קשר">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="copyrights">
+        כל הזכויות שמורות &COPY; 2024 <a href="#">EVE KEREN</a>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

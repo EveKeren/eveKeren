@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+#background {
+  background: url(images/Path15.png) no-repeat;
+  background-size: cover;
+  height: 590px;
+}
+
+#box {
+  background: #1a1a1ad4 0% 0% no-repeat padding-box;
+  width: 569px;
+  height: 643px;
+  position: absolute;
+  top: 157px;
+  left: 1056px;
+  padding: 65px;
+}
+
+.container {
+  text-align: right;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.container > h1 {
+  font: normal normal 900 36px/53px Heebo;
+}
+.container > p {
+  font: normal normal normal 20px/29px Heebo;
+  color: #f9f9f9;
+  padding: 21px 0 44px 0;
+}
+.container > form {
+  display: flex;
+  flex-direction: column;
+  font: normal normal bold 16px/24px Heebo;
+}
+.container > form > .form-label {
+  padding: 10px 0;
+}
+.container > form > .form-control {
+  padding: 15px 10px;
+  font: normal normal bold 16px/24px Heebo;
+  box-sizing: border-box;
+  transition: all ease-in-out 0.25s;
+  border: 3px solid transparent;
+}
+.container > form > .form-control:focus {
+  border: 3px solid #d31c75;
+  outline: none;
+}
+.container > form > input[type="submit"] {
+  padding: 15px 10px;
+  background-color: #d31c75;
+  border: 3px solid transparent;
+  margin: 25px 0 0 0;
+  color: white;
+  font: normal normal bold 16px/24px Heebo;
+  width: 166px;
+  transition: all ease-in-out 0.25s;
+  cursor: pointer;
+}
+.container > form > input[type="submit"]:hover {
+  background-color: white;
+  color: #d31c75;
+  border-color: #d31c75;
+}
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  #background {
+    height: 213px;
+    width: 100vw;
+  }
+  #box {
+    width: 300px;
+    height: 441px;
+    top: 89px;
+    left: auto;
+    padding: 35px;
+  }
+  .container > h1 {
+    text-align: center;
+    font: normal normal 900 25px/30px Heebo;
+    width: 146px;
+    margin: auto;
+  }
+  .container > p {
+    text-align: center;
+    font: normal normal normal 15px/22px Heebo;
+    padding: 12px 0 22px 0;
+  }
+  .container > form > .form-label {
+    font: normal normal bold 14px/21px Heebo;
+  }
+  .container > form > .form-control {
+    font: normal normal bold 14px/21px Heebo;
+    padding: 7px 5px;
+    border: 1px solid #d31c75;
+  }
+  .container > form > input[type="submit"] {
+    font: normal normal bold 15px/20px Heebo;
+    letter-spacing: 0.23px;
+    width: 76px;
+    height: 33px;
+    padding: 5px;
+  }
+  .container > form > .form-control:focus {
+    border: 1px solid #d31c75;
+  }
+}

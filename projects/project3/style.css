@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  direction: rtl;
+}
+.image {
+  width: 60vw;
+}
+.image > img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.form {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 5em 3em;
+  justify-content: center;
+  align-items: center;
+}
+.form-text {
+  width: 100%;
+}
+.form-text > h1 {
+  font: normal normal 900 43px/63px Heebo;
+  color: #020253;
+}
+.form-text > p {
+  font: normal normal normal 20px/29px Heebo;
+  color: #020253;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin: 1em 0;
+}
+.form-control > input {
+  width: 418px;
+  height: 50px;
+  background: #e5eeff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border: 0;
+  border-bottom: 4px solid #020253;
+}
+.form-control > label {
+  font: normal normal bold 16px/24px Heebo;
+  letter-spacing: 0px;
+  color: #2c2c2c;
+}
+.button > input {
+  background: #020253 0% 0% no-repeat padding-box;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Heebo;
+}
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .image {
+    width: 100vw;
+  }
+  .image > img {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+  }
+  .form {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 3em 3em;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-text {
+    width: 100%;
+  }
+  .form-text > h1 {
+    font: normal normal 900 28px/41px Heebo;
+    color: #020253;
+  }
+  .form-text > p {
+    font: normal normal normal 15px/22px Heebo;
+    color: #020253;
+  }
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin: 2em;
+  }
+  .form-control > input {
+    width: 100%;
+    height: 34px;
+    background: #e5eeff 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: 0;
+    border-bottom: 4px solid #020253;
+  }
+  .form-control > label {
+    font: normal normal bold 10px/14px Heebo;
+    letter-spacing: 0px;
+    color: #2c2c2c;
+  }
+  .button > input {
+    background: #020253 0% 0% no-repeat padding-box;
+    border: none;
+    color: white;
+    width: 286px;
+    letter-spacing: 0.21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font: normal normal bold 14px/19px Heebo;
+    margin: auto;
+    margin: 2em 0 0 0;
+  }
+}

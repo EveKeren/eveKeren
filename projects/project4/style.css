@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+body {
+  background: transparent linear-gradient(180deg, #281eff 0%, #2dff8c 100%) 0%
+    0% no-repeat padding-box;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#container {
+  width: 1100px;
+  color: white;
+}
+#container h1 {
+  font: normal normal normal 160px/231px Satisfy;
+  text-shadow: 0px 0px 36px #00000087;
+}
+#container h2 {
+  font: normal normal normal 32px/38px Varela Round;
+}
+#container p {
+  font: normal normal normal 16px/20px Varela Round;
+  color: #f9f9f9;
+  margin: 18px auto;
+}
+#container form {
+  display: flex;
+  font: normal normal normal 16px/20px Varela Round;
+  color: #f9f9f9;
+  justify-content: space-between;
+}
+#container form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+#container form > div > input {
+  width: 418px;
+  height: 50px;
+  background: #f6f6f624 0% 0% no-repeat padding-box;
+  border: 2px solid #ffffff;
+  font: normal normal normal 16px/20px Varela Round;
+  color: white;
+}
+#container form > div > input[type="submit"] {
+  background: #fff;
+  border: 0;
+  color: black;
+  width: 206px;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+  #container {
+    width: 372px;
+  }
+  #container h1 {
+    font: normal normal normal 60px/86px Satisfy;
+  }
+  #container h2 {
+    font: normal normal normal 18px/22px Varela Round;
+    margin: 20px 0;
+  }
+  #container p {
+    font: normal normal normal 16px/20px Varela Round;
+  }
+  #container form {
+    flex-direction: column;
+    font: normal normal normal 11px/13px Varela Round;
+  }
+  #container form > div {
+    margin: 15px 0;
+  }
+  #container form > div > input {
+    width: 100%;
+    height: 36px;
+  }
+  #container form > div > input[type="submit"] {
+    width: 100%;
+    height: 36px;
+    font: normal normal normal 11px/13px Varela Round;
+    color: #2823fd;
+  }
+}
