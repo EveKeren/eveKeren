@@ -184,3 +184,19 @@ header {
   width: 1189px;
   height: 718px;
 }
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+  }
+  .links ul li {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 5px 20px;
+  }
+  .contactUs {
+    background-image: none;
+  }
+  .form-control {
+    width: 80%;
+  }
+}
