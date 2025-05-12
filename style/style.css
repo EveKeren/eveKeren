@@ -29,12 +29,13 @@ body {
 .nav-link:hover {
   background: #0d6efd;
   color: white;
-  border-radius: 10px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 .nav-link {
   color: black;
-    padding-right: 10px;
+  padding-right: 10px;
   padding-left: 10px;
+  border-radius: 10px;
 }
 .nav-link.active {
     font-weight: bold;
