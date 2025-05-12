@@ -45,6 +45,7 @@ body {
 }
 .nav-link.active:hover {
   color: white;
+  border-radius: 10px;
 }
 #navbarNav {
   flex-direction: row-reverse;
