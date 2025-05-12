@@ -43,9 +43,16 @@ body {
     border-bottom: 2px solid #69088e;
   border-radius: 0px;
 }
-.nav-link.active:hover a {
+.nav-link.active:hover {
   color: white;
   border-radius: 10px;
+}
+.nav-link.active:hover a,
+.nav-link.active:hover a:visited,
+.nav-link.active:hover a:active,
+.nav-link.active:hover a:hover{
+  color: white;
+  text-decoration: none;
 }
 #navbarNav {
   flex-direction: row-reverse;
