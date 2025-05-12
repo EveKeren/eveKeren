@@ -44,14 +44,14 @@ body {
   border-radius: 0px;
 }
 .nav-link.active:hover {
-  color: white;
+  color: white !important;
   border-radius: 10px;
 }
 .nav-link.active:hover a,
 .nav-link.active:hover a:visited,
 .nav-link.active:hover a:active,
 .nav-link.active:hover a:hover{
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
 #navbarNav {
