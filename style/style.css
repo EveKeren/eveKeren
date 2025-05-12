@@ -148,6 +148,12 @@ header {
   color: white;
   font-weight: 500;
   text-transform: uppercase;
+  opacity: 0.55;
+  transition: opacity 0.25s ease-in-out;
+}
+.tag:hover {
+  opacity: 0.95;
+  
 }
 
 .tag-html { background-color: #e44d26; }
