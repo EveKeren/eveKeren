@@ -28,6 +28,8 @@ body {
 }
 .nav-link:hover {
   background: #0d6efd;
+  color: white;
+  border-radius: 10px;
 }
 .nav-link {
   color: black;
