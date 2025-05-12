@@ -132,6 +132,31 @@ header {
 .projects .btn:hover {
   background-color: #c8a2c8;
 }
+
+.tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.tag-html { background-color: #e44d26; }
+.tag-css { background-color: #264de4; }
+.tag-bootstrap { background-color: #7952b3; }
+.tag-js { background-color: #f0db4f; color: #000; }
+.tag-sass { background-color: #cc6699; }
+.tag-wordpress { background-color: #00749C; }
+
+
 .contactUs {
     background: #e9ecef;
     padding: 60px 20px;
