@@ -27,7 +27,7 @@ body {
   font-weight: bold;
 }
 .nav-link:hover {
-  background: #0d6efd;
+  background: #69088e;
   color: white;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
@@ -39,8 +39,9 @@ body {
 }
 .nav-link.active {
     font-weight: bold;
-    color: #0d6efd !important;
-    border-bottom: 2px solid #0d6efd;
+    color: #69088e !important;
+    border-bottom: 2px solid #69088e;
+  border-radius: 0px;
 }
 #navbarNav {
   flex-direction: row-reverse;
