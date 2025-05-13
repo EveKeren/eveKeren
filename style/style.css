@@ -111,26 +111,27 @@ header {
   text-align: center;
     margin-bottom: 40px;
 }
-.projects {
+.projects, .playcenter {
   padding: 60px 20px;
     background-color: #f8f9fa;
 }
-.projects .card {
+.playcenter { background-color: #fff3cd !important; }
+.projects .card, .playcenter .card {
   margin: 50px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   direction: rtl;
 }
-.projects .card-title {
+.projects .card-title, .playcenter .card-title {
   font-weight: bold;
   text-align: center;
   font-size: 1.5rem;
 }
-.projects .card-text {
+.projects .card-text, .playcenter .card-text {
   color: #666;
 }
-.projects .btn {
+.projects .btn, .playcenter .btn {
   background-color: #69088e;
   border: 0px;
   font-weight: bold;
@@ -141,7 +142,7 @@ header {
     transition: 0.3s ease;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
-.projects .btn:hover {
+.projects .btn:hover, .playcenter .btn:hover {
   background-color: #c8a2c8;
 }
 
