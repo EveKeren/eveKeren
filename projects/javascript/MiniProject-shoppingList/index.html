@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="container max-w-lg mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">
+      SH<i class="fa-brands fa-shopware text-green-500"></i>PPING LIST
+    </h1>
+    <div class="flex flex-col sm:flex-row gap-3 mb-6">
+      <input id="item" type="text"
+        class="flex-grow p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+        placeholder="Enter item name" />
+      <input id="quantity" type="number" min="1" value="1"
+        class="w-24 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Qty" />
+      <button onclick="addItem()" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition">
+        Add
+      </button>
+    </div>
+    <div id="clearAllContainer" class="flex justify-end mb-4 hidden">
+      <button onclick="clearAllItems()" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition">
+        Clear All
+      </button>
+    </div>
+    <ul id="itemList" class="space-y-2">
+      <!-- Items will be added here -->
+    </ul>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
