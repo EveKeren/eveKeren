@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who wants to be a Millionaire?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Who Wants to Be a Millionaire</h1>
+        <div id="score">Score: $0</div>
+        <div id="question"></div>
+        <div id="prize"></div>
+        <div id="answers">
+            <div class="answer-block" onclick="selectAnswer(0)"></div>
+            <div class="answer-block" onclick="selectAnswer(1)"></div>
+            <div class="answer-block" onclick="selectAnswer(2)"></div>
+            <div class="answer-block" onclick="selectAnswer(3)"></div>
+        </div>
+        <button id="next-btn" class="hidden" onclick="nextQuestion()">Next Question</button>
+        <div id="game-over" class="hidden"></div>
+        <button id="reset-btn" onclick="resetGame()">Reset Game</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
