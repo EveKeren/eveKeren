@@ -115,7 +115,10 @@ header {
   padding: 60px 20px;
     background-color: #f8f9fa;
 }
-.playcenter { background-color: #fff3cd !important; }
+.playcenter {
+  background-color: #fff3cd !important;
+  text-align: center;
+}
 .projects .card, .playcenter .card {
   margin: 50px;
   background-color: white;
