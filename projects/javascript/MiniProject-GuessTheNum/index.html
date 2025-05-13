@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <title>Guess the Number</title>
+</head>
+
+<body>
+  <div class="container-fluid py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <h1 class="display-2 text-danger mb-4">Guess the Number</h1>
+        <p class="lead">You have 5 attempts to guess a number (1-10)</p>
+        <div class="mb-3">
+          <label for="guess" class="form-label">Your guess:</label>
+          <input class="form-control form-control-lg w-50 mx-auto" type="number" id="guess" />
+        </div>
+        <button class="btn btn-outline-success btn-lg mt-3" onclick="check()" id="checkBtn">Check</button>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div id="results" class="fs-5"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    'use strict'
+    let num, attempts;
+
+    function startGame() {
+      num = Math.ceil(Math.random() * 10);
+      attempts = 5;
+      console.log(num);
+      document.getElementById("results").innerHTML = "";
+      document.getElementById("guess").value = "";
+      document.getElementById("checkBtn").disabled = false;
+      document.getElementById("guess").readOnly = false;
+    }
+
+    startGame();
+
+    function check() {
+      let guess = +document.getElementById("guess").value;
+      if (guess < 1 || guess > 10) {
+        document.getElementById("results").innerHTML += `<p class="text-warning">Please enter a number between 1 and 10</p>`;
+      } else {
+        attempts--;
+        if (guess < num) {
+          document.getElementById("results").innerHTML += `<p class="text-primary">${guess} is too small</p>`;
+        } else if (guess > num) {
+          document.getElementById("results").innerHTML += `<p class="text-primary">${guess} is too big</p>`;
+        } else {
+          document.getElementById("results").innerHTML += `<p class="text-success">You won the game! The number was ${num}.</p> <button class="btn btn-primary mt-2" onclick="startGame()">Start again</button>`;
+          document.getElementById("checkBtn").disabled = true;
+          document.getElementById("guess").readOnly = true;
+        }
+      }
+      if (attempts == 0 && num != guess) {
+        document.getElementById("results").innerHTML += `<p class="text-danger">You lost the game. The number was ${num}</p> <button class="btn btn-primary mt-2" onclick="startGame()">Start again</button>`;
+        document.getElementById("checkBtn").disabled = true;
+        document.getElementById("guess").readOnly = true;
+      }
+    }
+  </script>
+</body>
+
+</html>
