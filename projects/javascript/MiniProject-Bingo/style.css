@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#bingoCard {
+    display: grid;
+    grid-template-columns: repeat(5, 90px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.cell pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cell.marked {
+    background-color: green;
+    opacity: 0.2;
+}
+
+.bingo {
+    background-color: #4caf50;
+    color: white;
+    font-size: 18px;
+}
+
+#callPicture {
+    margin: 20px;
+}
+
+#callPicture img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+#message {
+    font-size: 30px;
+    color: #388e3c;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
