@@ -148,7 +148,9 @@ header {
 .projects .btn:hover, .playcenter .btn:hover {
   background-color: #c8a2c8;
 }
-
+.playcenter .card-body {
+  align-content: end;
+}
 .tags {
   margin-top: 10px;
   margin-bottom: 10px;
